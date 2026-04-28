@@ -39,8 +39,6 @@ export default function Home() {
               </Link>
               <a
                 href={instagramUrl}
-                target="_blank"
-                rel="noreferrer"
                 aria-label="Visit teus10x on Instagram"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all"
               >
