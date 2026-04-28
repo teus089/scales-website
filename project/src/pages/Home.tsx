@@ -7,15 +7,15 @@ export default function Home() {
   return (
     <div className="bg-white">
       <section className="relative bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 text-white overflow-hidden">
-        <div className="absolute inset-0">
+        <div className="pointer-events-none absolute inset-0">
           <img
             src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Technology and innovation"
             className="w-full h-full object-cover opacity-10"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-blue-500/10"></div>
-        <div className="relative mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-blue-500/10"></div>
+        <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl">
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
               I build systems that help businesses grow without complexity
@@ -39,6 +39,7 @@ export default function Home() {
               </Link>
               <a
                 href={instagramUrl}
+                target="_top"
                 aria-label="Visit teus10x on Instagram"
                 className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all"
               >
