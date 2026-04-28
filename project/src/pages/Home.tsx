@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Zap, Target, Workflow } from 'lucide-react';
+import { ArrowRight, Instagram, Zap, Target, Workflow } from 'lucide-react';
+
+const instagramUrl = 'https://www.instagram.com/teus10x/?utm_source=ig_embed&utm_campaign=loading';
 
 export default function Home() {
   return (
@@ -35,6 +37,15 @@ export default function Home() {
               >
                 View services
               </Link>
+              <a
+                href={instagramUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Visit teus10x on Instagram"
+                className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
